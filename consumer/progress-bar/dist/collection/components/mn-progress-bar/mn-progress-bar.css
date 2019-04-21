@@ -1,0 +1,19 @@
+.title {
+  color: blue; }
+
+.content {
+  color: green; }
+
+.progress-container {
+  display: flex;
+  height: var(--progress-height, 20px);
+  background: var(--progress-background, lightgrey);
+  overflow: hidden;
+  border-radius: 20px; }
+
+.progress-bar {
+  background: var(--progress-color, #6b9bac);
+  width: calc(var(--current-value, 0) * 100% / var(--max-value, 100)); }
+
+.progress-bar-remainder {
+  flex: 1; }

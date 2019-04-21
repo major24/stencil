@@ -1,0 +1,40 @@
+{
+  "components": [
+    {
+      "tag": "mn-progress-bar",
+      "dependencies": [],
+      "componentClass": "MyProgressBar",
+      "componentPath": "components/mn-progress-bar/mn-progress.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/mn-progress-bar/mn-progress-bar.scss"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "max",
+          "type": "Number",
+          "attr": "max"
+        },
+        {
+          "name": "value",
+          "type": "Number",
+          "attr": "value"
+        }
+      ],
+      "hostElement": {
+        "name": "el"
+      },
+      "shadow": true
+    }
+  ],
+  "collections": [],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.16.2",
+    "typescriptVersion": "3.2.2"
+  },
+  "bundles": []
+}

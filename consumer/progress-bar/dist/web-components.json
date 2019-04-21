@@ -1,0 +1,20 @@
+{
+  "tags": [
+    {
+      "label": "mn-progress-bar",
+      "description": "",
+      "attributes": [
+        {
+          "label": "max",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "value",
+          "description": "",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

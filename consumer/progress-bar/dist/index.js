@@ -1,0 +1,1 @@
+// MnProgressBar: CommonJS Main

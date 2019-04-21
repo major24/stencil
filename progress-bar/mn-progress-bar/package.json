@@ -1,0 +1,28 @@
+{
+  "name": "mn-progress-bar",
+  "version": "1.0.1",
+  "description": "My test on stencil and npm publish",
+  "module": "dist/esm/index.js",
+  "main": "dist/index.js",
+  "browser": "dist/mn-progress-bar.js",
+  "unpkg": "dist/ionic.js",
+  "types": "dist/types/components.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "stencil build --docs",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll"
+  },
+  "dependencies": {
+    "@stencil/sass": "^0.1.1"
+  },
+  "devDependencies": {
+    "@stencil/core": "~0.16.2",
+    "@stencil/utils": "0.0.5"
+  },
+  "license": "MIT"
+}

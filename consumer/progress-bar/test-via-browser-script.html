@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>Stencil Component Starter</title>
+  <script src="./dist/mn-progress-bar.js"></script>
+  <script>
+
+    const move = () => {
+      var elem = document.getElementById("myp");
+      var width = 1;
+      var id = setInterval(frame, 20);
+      function frame() {
+        elem.setAttribute('value', width);
+        if (width === 100) {
+          clearInterval(id);
+        } else {
+          width++;
+          elem.style.width = width + '%';
+        }
+      }
+    }
+
+    const testRunMyProgressBar = () => {
+      console.log('running progress bar');
+      move();
+    }
+  </script>
+</head>
+<body>
+  <div>Simple tester</div>
+  <p>IMPORTANT:</p>
+  <p>Need to build for in PROD mode.</p>
+  <p>Copy the dist folder and test it. Should contain loader folder</p>
+  <p>npm run build</p>
+  <hr />
+
+  <mn-progress-bar value="20"></mn-progress-bar>
+  <hr />
+
+  <mn-progress-bar id='myp' value="0"></mn-progress-bar>
+
+</body>
+<script>
+  testRunMyProgressBar();
+</script>
+</html>
