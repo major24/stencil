@@ -105,15 +105,15 @@ $ cd ~/Documents/projects/stencil/progress-bar-consumer-vue
 // run below to add to node modules and save to pacakage.json file
 
 ## DO this in GIT BASH terminal.. 
- $ cd ~/Documents/projects/stencil/progress-bar-consumer-vue 
-$ npm install '../progress-bar/mn-progress-bar/mn-progress-bar-1.0.1.tgz' --save 
-// THIS will inclde node project, but will not download all required pkgs 
-$ npm install   // This should download the pkg to node_modules 
+ $ cd ~/Documents/projects/stencil/progress-bar-consumer-vue  
+ $ npm install '../progress-bar/mn-progress-bar/mn-progress-bar-1.0.1.tgz' --save  
+ // THIS will inclde node project, but will not download all required pkgs  
+ $ npm install   // This should download the pkg to node_modules  
 
-(npm uninstall before installing a newer version. remove package.json ref, if not removed and delete node_modules) 
+ (npm uninstall before installing a newer version. remove package.json ref, if not removed and delete node_modules) 
 
-In code, main.js 
-Add below lines 
+ In code, main.js 
+ Add below lines 
 
 	import  { defineCustomElements }  from 'mn-progress-bar/dist/loader';
 
