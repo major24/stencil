@@ -81,21 +81,20 @@ https://stenciljs.com/docs/vue
  ## Testing StencilJS by creating npm package (locally) and consuming via vue component
  Avoiding npm registry for faster development
 
- ## *** First build in PROD mode for stencilJS proj ***
- cd to the APP folder which you want to package it...
+ ## First build in PROD mode for stencilJS project 
+ ## Windows: use gitbash terminal (must) 
+ ## Incase of error, always delete node_modues, package-json and dist folders. In consumer app, delete public/dist folder as well
 
 # Example
-Windows: use gitbash terminal
-
 $ cd ~/Documents/projects/stencil/progress-bar/mn-progress-bar
 $ - npm run build
 ## dist folder will be created. ENSURE LOADER file is available. If not run in build mode
 $ - npm pack    // this will create package <<pkg-name>>-n.n.n.tgz in local machine, instead of  publising in npm registery
 
 npm notice === Tarball Details ===
-npm notice name:          @mn/mn-progress-bar
+npm notice name:          mn-progress-bar
 npm notice version:       1.0.1
-npm notice filename:      mn-mn-progress-bar-1.0.1.tgz
+npm notice filename:      mn-progress-bar-1.0.1.tgz
 
 
 ## IN VUE
@@ -105,15 +104,15 @@ $ cd ~/Documents/projects/stencil/progress-bar-consumer-vue
 
 // run below to add to node modules and save to pacakage.json file
 
-// *** DO this in GIT BASH terminal..
- $ cd ~/Documents/projects/stencil/progress-bar-consumer-vue
-$ npm install '../progress-bar/mn-progress-bar/mn-progress-bar-1.0.1.tgz' --save
-// THIS will inclde node project, but will not download all required pkgs
-$ npm install   // This should download the pkg to node_modules
+## DO this in GIT BASH terminal.. 
+ $ cd ~/Documents/projects/stencil/progress-bar-consumer-vue 
+$ npm install '../progress-bar/mn-progress-bar/mn-progress-bar-1.0.1.tgz' --save 
+// THIS will inclde node project, but will not download all required pkgs 
+$ npm install   // This should download the pkg to node_modules 
 
-(npm uninstall before installing a newer version. remove package.json ref, if not removed and delete node_modules)
+(npm uninstall before installing a newer version. remove package.json ref, if not removed and delete node_modules) 
 
-In code, main.js
+In code, main.js 
 Add below lines 
 
 	import  { defineCustomElements }  from 'mn-progress-bar/dist/loader';
